@@ -1516,7 +1516,7 @@ step()
 
 ```
 const task = (timer, light) => 
-    new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (light === 'red') {
                 red()
